@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thanh toán vé Central Zoo</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="muave.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+<body>
+<header class="header">
+    <a href="file:///C:/Users/ADMIN/OneDrive/Desktop/Central%20Zoo/index.html" class="logo"> <i class="fas fa-paw"></i> Central Zoo</a>
+      
+
+    <div class="icons">
+        <div id="login-btn" class="fas fa-user"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+</header>
+
+  <form id="ticket-form">
+    <div class="box">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    
+
+    <div class="form-group">
+        <label for="child">Child:</label>
+        <input type="number" id="child" name="child" min="0" value="0">
+      </div>
+
+
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+
+    <h2>Ticket Information</h2>
+
+    <div class="form-group">
+      <label for="adult">Adult:</label>
+      <input type="number" id="adult" name="adult" min="0" value="0">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="senior">Senior:</label>
+      <input type="number" id="senior" name="senior" min="0" value="0">
+    </div>
+
+    <div class="form-group">
+      <label for="date">Date:</label>
+      <input type="text" id="datepicker" name="date" required>
+    </div>
+
+    <input type="submit" value="Buy">
+    </div>
+  </form>
+
+  <div id="total"></div>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(function() {
+      $("#datepicker").datepicker({dateFormat: "dd/mm/yy"});
+    });
+
+    $("#ticket-form").submit(function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
+      const adult = document.getElementById("adult").value;
+      const child = document.getElementById("child").value;
+      const senior = document.getElementById("senior").value;
+      const date = document.getElementById("datepicker").value;
+
+      const total = 20*adult + 10*child + 15*senior;
+      const message = `Hello ${name}, Thank you for booking tickets at Central Zoo. Your order details:
+
+Adult: ${adult} ticket x 20 USD = ${20*adult} USD
+Child: ${child} ticket x 10 USD = ${10*child} USD
+Senior: ${senior} ticket x 15 USD = ${15*senior} USD
+Total amount: ${total} USD
+Booking date: ${date}
+We have sent your ticket information and payment instructions to your email (${email}). Please check your mailbox.
+
+Thank you for using our service!`;
+document.getElementById("total").innerHTML = `<h2>Total amount: ${total} USD</h2>`;
+
+alert(message);
+});
+</script>
+<footer>
+
+    <section class="footer">
+    <div class="box-container">
+       
+      <div class="box">
+        <h3><i class="fas fa-paw"></i>Central Zoo</h3>
+        <p>Welcome to the Central Zoo</p>
+        <p class="links"><i class="fas fa-clock"></i>monday - friday</p>
+        <p class="days">7:00AM - 11:00PM</p>
+      </div>
+      
+      <div class="box">
+        <h3>Contact Info</h3>
+        <p class="links"><i class="fas fa-phone"></i> 1245-147-2589</p>
+        <p class="links"><i class="fas fa-phone"></i> 1245-147-2589</p>
+        <p class="links"><i class="fas fa-envelope"></i> fptaptech.edu.vn</p>
+        <p class="links"><i class="fas fa-map-marker-alt"></i>tòa nhà detech số 8a tôn thất thuyết</p>
+    </div>
+
+    <div class="box">
+      <h3>newsletter</h3>
+      <p>subscribe for latest updates</p>
+      <input type="email" placeholder="Your Email" class="email">
+      <a href="#" class="btn">subscribe</a>
+      <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+      </div>
+  </div>
+
+    </div>
+  </section>
+    </footer>
+</body>
+</html>
