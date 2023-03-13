@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+  --main: #ff6e01;
+  --bg: #f1e1d2;
+  --black: #000;
+  --white: #fff;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+html::-webkit-scrollbar{
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--main);
+  border-radius: 5rem;
+}
+
+section{
+  padding: 8rem 7%;
+}
+
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  color: var(--main);
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  padding: 1.2rem 0;
+}
+
+.btn{
+  font-size: 1.7rem;
+  display: inline-block;
+  background: var(--main);
+  color: var(--white);
+  box-shadow: var(--box-shadow);
+  border-radius: 5rem;
+  padding: 0.9rem 3rem;
+  margin-top: 1rem;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: #ff9748;
+  z-index: -1;
+  transition: .3s linear;
+  left: 0;
+}
+
+.btn:hover::before{
+  width: 100%;
+}
+
+
+/* header */
+
+.header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+
+.header .logo{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+.header .logo i{
+  color: var(--main);
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1rem;
+  }
+  
+  .header .navbar a:hover{
+    color: var(--main);
+  }
+  
+  .header .icons div{
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: var(--black);
+  }
+  
+  .header .icons div:hover{
+    color: var(--main);
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box;
+  }
+  img,
+  picture,
+  svg,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+  body {
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+  }
+  /* style login */
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f5f5f5;
+  }
+  .login__container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .login__container h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .login__container form {
+    display: flex;
+    flex-direction: column;
+  }
+  .login__container form label {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  .login__container form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .login__container form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .login__container form button:hover {
+    background: #555;
+  }
+  .login__container form a {
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333;
+  }
+  .login__container form a:hover {
+    color: #555;
+  }
+  .login__registerButton {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+  }
+  /* style signup */
+  .signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f5f5f5;
+  }
+  .signup__container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .signup__container h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .signup__container form {
+    display: flex;
+    flex-direction: column;
+  }
+  .signup__container form label {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  .signup__container form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .signup__container form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ff6e01;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .signup__container form button:hover {
+    background: #555;
+  }
+  .signup__container form a {
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333;
+  }
+  .signup__container form a:hover {
+    color: #555;
+  }
+  .signup__registerButton {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+  }
+  .failure-icon,
+  .error{
+      color: red;
+  }
+  
+  .success-icon{
+      color: green;
+  }
+  .error{
+      font-size: 10px;
+      margin-top: 1px;
+  }
+  .success-icon,
+  .failure-icon{
+      right: 0;
+      opacity: 0;
+  }
+button:hover{
+  opacity: 0.8;
+}
+.footer{
+  background: url(footer.jpg) no-repeat;
+  background-size: cover;
+  padding: 3rem 7%;
+}
+
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  color: var(--main);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links{
+  display: block;
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links i{
+  color: var(--main);
+  padding-right: .5rem;
+}
+
+.footer .box-container .box .links:hover i{
+  padding-right: 2rem;
+}
+
+.footer .box-container .box .days{
+  margin-left: 2.2rem;
+  line-height: .2;
+}
+
+.footer .box-container .box .email{
+  width: 100%;
+  margin: .7rem 0;
+  padding: 1rem;
+  border-radius: .5rem;
+  background: var(--white);
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+}
+
+.footer .box-container .box .share a{
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  color: var(--black);
+  background: var(--white);
+  font-size: 1.2rem;
+  border-radius: 5rem;
+  margin-right: .8rem;
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.footer .box-container .box .share a:hover{
+  background: var(--main);
+}
+
+.footer .credit{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2.5rem;
+  color: var(--black);
+  border-top: .2rem solid rgba(0, 0, 0, 0.2);
+}
+
+.footer .credit .link{
+  color: var(--main);
+}
