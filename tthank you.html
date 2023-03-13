@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thank You for Visiting Central Park Zoo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+  --main: #ff6e01;
+  --bg: #f1e1d2;
+  --black: #000;
+  --white: #fff;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+html::-webkit-scrollbar{
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--main);
+  border-radius: 5rem;
+}
+
+section{
+  padding: 8rem 7%;
+}
+
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  color: var(--main);
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  padding: 1.2rem 0;
+}
+
+.btn{
+  font-size: 1.7rem;
+  display: inline-block;
+  background: var(--main);
+  color: var(--white);
+  box-shadow: var(--box-shadow);
+  border-radius: 5rem;
+  padding: 0.9rem 3rem;
+  margin-top: 1rem;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: #ff9748;
+  z-index: -1;
+  transition: .3s linear;
+  left: 0;
+}
+
+.btn:hover::before{
+  width: 100%;
+}
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f8f8f8;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #ff9748;
+			padding: 10px;
+			text-align: center;
+			color: #fff;
+			font-size: 28px;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-top: 30px;
+			text-align: center;
+		}
+
+		p {
+			font-size: 20px;
+			line-height: 1.5;
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		.button {
+			display: inline-block;
+			background-color: #ff9748;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-align: center;
+			text-decoration: none;
+			margin-top: 30px;
+			font-size: 20px;
+			transition: background-color 0.3s ease-in-out;
+            position: relative;
+            left: 250px;
+		}
+
+		.button:hover {
+			background-color: #6fa9bb;
+		}
+
+		.footer {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+			font-size: 14px;
+		}
+        .footer{
+    background: url(footer.jpg) no-repeat;
+    background-size: cover;
+    padding: 3rem 7%;
+    position: relative;
+    top: 20px;
+
+  }
+  
+  .footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--main);
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--white);
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box .links{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box .links i{
+    color: var(--main);
+    padding-right: .5rem;
+  }
+  
+  .footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+  }
+  
+  .footer .box-container .box .days{
+    margin-left: 2.2rem;
+    line-height: .2;
+  }
+  
+  .footer .box-container .box .email{
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: var(--white);
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+  }
+  
+  .footer .box-container .box .share a{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    color: var(--black);
+    background: var(--white);
+    font-size: 1.2rem;
+    border-radius: 5rem;
+    margin-right: .8rem;
+    text-align: center;
+    margin-top: 1.4rem;
+  }
+  
+  .footer .box-container .box .share a:hover{
+    background: var(--main);
+  }
+  
+  .footer .credit{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2.5rem;
+    color: var(--black);
+    border-top: .2rem solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .footer .credit .link{
+    color: var(--main);
+  }
+	</style>
+</head>
+<body>
+	<header>
+		Thank You for Visiting Central Park Zoo
+	</header>
+	<div class="container">
+		<h1>Thank You!</h1>
+		<p>We appreciate your visit to Central Park Zoo. We hope you had a great time and enjoyed all the animals and exhibits we have to offer. Please come back and visit us again soon!</p>
+		<a href="/" class="button">Go Back to Homepage</a>
+	</div>
+    <footer>
+
+        <section class="footer">
+        <div class="box-container">
+           
+          <div class="box">
+            <h3><i class="fas fa-paw"></i>Central Zoo</h3>
+            <p>Welcome to the Central Zoo</p>
+            <p class="links"><i class="fas fa-clock"></i>monday - friday</p>
+            <p class="days">7:00AM - 11:00PM</p>
+          </div>
+          
+          <div class="box">
+            <h3>Contact Info</h3>
+            <p class="links"><i class="fas fa-phone"></i> 1245-147-2589</p>
+            <p class="links"><i class="fas fa-phone"></i> 1245-147-2589</p>
+            <p class="links"><i class="fas fa-envelope"></i> fptaptech.edu.vn</p>
+            <p class="links"><i class="fas fa-map-marker-alt"></i>tòa nhà detech số 8a tôn thất thuyết</p>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <input type="email" placeholder="Your Email" class="email">
+          <a href="#" class="btn">subscribe</a>
+          <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+          </div>
+      </div>
+
+        </div>
+      </section>
+        </footer>
+</body>
+</html>
