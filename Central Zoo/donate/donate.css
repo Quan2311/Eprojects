@@ -63,6 +63,8 @@ section{
   z-index: 0;
   position: relative;
   overflow: hidden;
+  position: relative;
+  left: 75px;
 }
 
 .btn::before{
@@ -235,9 +237,6 @@ body {
     background: url(../images/footer.jpg) no-repeat;
     background-size: cover;
     padding: 3rem 7%;
-    position: relative;
-    top: 20px;
-
   }
   
   .footer .box-container{
@@ -302,6 +301,8 @@ body {
     margin-right: .8rem;
     text-align: center;
     margin-top: 1.4rem;
+    position: relative;
+    left: 70px;
   }
   
   .footer .box-container .box .share a:hover{
