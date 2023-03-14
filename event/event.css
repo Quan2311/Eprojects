@@ -279,7 +279,7 @@ body {
     /* Footer styles */
     
     .footer{
-        background: url(../images/footer.jpg) no-repeat;
+        background: url(footer.jpg) no-repeat;
         background-size: cover;
         padding: 3rem 7%;
         position: relative;
