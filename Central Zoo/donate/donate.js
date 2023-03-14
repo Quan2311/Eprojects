@@ -10,5 +10,7 @@ form.addEventListener("submit", (event) => {
     name: formData.get("name"),
     email: formData.get("email"),
     phone: formData.get("phone"),
-    account number: formData.get("accoun number"),
-    amount: formData.get("
+    accountnumber: formData.get("accoun number"),
+    amount: formData.get("amount"),
+  };
+});
