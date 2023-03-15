@@ -35,3 +35,6 @@ var swiper = new Swiper(".gallery-slider", {
         },
     }
 })
+
+
+  
